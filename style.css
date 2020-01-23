@@ -5,6 +5,92 @@
     --color-4: #9E3150;
     --color-5: #88BAA4;
 }
-body {
 
+body {
+    background-color: #66b2b2;
+}
+
+/* CSS for Tienda.html */
+#products {
+  width: 98%;
+  margin: 0 auto;
+  background-color: teal;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item {
+  border: 1px dashed brown;
+  flex: 1 31%;
+}
+
+.thumbnail {
+    padding: 1%;
+}
+
+.thumbnail .product-image,
+.thumbnail .product-caption {
+    margin: 1% auto;
+}
+
+.thumbnail .product-image {
+  display: block;
+  padding: 2px;
+  background-color: white;
+}
+
+.thumbnail .product-caption {
+  padding: 1%;
+  background-color: #b2d8d8;
+}
+
+.product-caption .product-title,
+.product-caption .product-description,
+.product-caption .row {
+  display: inline-block;
+  margin: 0;
+}
+
+/* Select the first two */
+#products .item:first-child,
+#products .item:nth-child(2) {
+  flex: 2 49%;
+}
+
+/* Tipografía */
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.product-caption .product-title {
+  font-size: 2.5rem;
+}
+
+.product-caption .product-description {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.product-caption .row {
+    font-size: 2rem;
+}
+
+.row {
+    display: inline-block;
+}
+
+.row .product-price {
+    display: block;
+    position: relative;
+    float: left;
+}
+.row .product-btn {
+    display: block;
+    position: relative;
+    float: right;
 }
