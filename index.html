@@ -1,135 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <title>Florería Dalia</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Floreria Dalia</title>
     <!--Icons, Denis kit on Font Awesome-->
     <script src="https://kit.fontawesome.com/60e2aa4703.js" crossorigin="anonymous"></script>
     <!--Style Sheets-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index-body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-
 <body>
-    <div class="top-bar">
-            <div class="social">
-                <a href="#" class="btn-facebook" id="btn-facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="btn-instagram" id="btn-instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="btn-pinterest" id="btn-pinterest"><i class="fab fa-pinterest"></i></a>
-            </div>
-            <div class="contact">
-                <a href="#" id="suscribirse" ><span class="suscribirse">Unete a nuestra familia</span></a>
-                <a href="#" id="login"><span>Iniciar sesión</span></a>
-            </div>
-    </div>
     <header>
-        <div class="logo">
-            <a href="#" class="logo-a logo-width">
-                <img src="img/logo.png" alt="" class="logo-img logo-width">
-            </a>
+        <div class="top-bar">
+            <div class="social">
+                <a href="#" class="btn-social" id="btn-facebook">Facebook<i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="btn-social" id="btn-instagram">Instagram<i class="fab fa-instagram"></i></a>
+                <a href="#" class="btn-social" id="btn-pinterest">Pinterest<i class="fab fa-pinterest"></i></a>
+            </div>
+            <div class="logo">
+                <a href="index2.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="" class="bor-right">Iniciar sesión</a></li>
+                    <li><a href="">Carrito de compras</a></li>
+                    <div class="search">
+                        <input type="search" placeholder="Buscar">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                </ul>
+            </nav>
         </div>
         <div class="navegation">
-            <nav class="navegation">
-                <ul class="navegation">
-                    <li>
-                        <a href="">
-                            <span class="nav-mar-r">Inicio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="nav-mar-r">¿Quiénes somos?</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="nav-mar-r">VIP</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="nav-mar-r">Contacto</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tienda.html">
-                            <span class="nav-mar-r">Tienda</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>Carrito</span>
-                        </a>
-                    </li>
+            <nav class="nav-width">
+                <ul>
+                    <li><a href="index2.html" class="bor-right">Inicio</a></li>
+                    <li><a href="" class="bor-right">Productos</a></li>
+                    <li><a href="" class="bor-right">Ocaciones</a></li>
+                    <li><a href="" class="bor-right">Servicios</a></li>
+                    <li><a href="tienda.html" class="bor-right">Contáctanos</a></li>
+                    <li><a href="">Carrito</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- fin-header -->
+    <!-- inicio-main -->
     <main>
-            <div class="presentacion">
-                <div class="text">
-                    <p class="text-1">¿Quienes</p>
-                    <p class="text-2">somos?</p>
+        <div class="img-principal">
+            <img src="img/nosotros-1.jpg" alt="">
+        </div>
+        <div class="productos">
+            <h2><a href="">Productos más vendidos</a></h2>
+            <div class="mas-vendidos">
+                <div class="product">
+                    <img src="img/producto.jpg" alt="">
+                    <a href="" class="nombre">Arreglo floral</a>
+                    <span class="price">$59.99</span>
+                    <a href="" class="btn add-car"><i class="fas fa-plus"></i>carrito</a>
+                </div>
+                <div class="product">
+                    <img src="img/producto.jpg" alt="">
+                    <a href="" class="nombre">Arreglo floral</a>
+                    <span class="price">$59.99</span>
+                    <a href="" class="btn add-car"><i class="fas fa-plus"></i>carrito</a>
+                </div>
+                <div class="product">
+                    <img src="img/producto.jpg" alt="">
+                    <a href="" class="nombre">Arreglo floral</a>
+                    <span class="price">$59.99</span>
+                    <a href="" class="btn add-car"><i class="fas fa-plus"></i>carrito</a>
+                </div>
+                <div class="product">
+                    <img src="img/producto.jpg" alt="">
+                    <a href="" class="nombre">Arreglo floral</a>
+                    <span class="price">$59.99</span>
+                    <a href="" class="btn add-car"><i class="fas fa-plus"></i>carrito</a>
                 </div>
             </div>
-            <div class="txt-presentacion">
-                <p class="nombre">Somos Dalia</p>
-                <p class="descripcion">Nos encargamos de llenar de flores tu vida</p>
-                <div>
-                    <a class="btn-tienda" href="tienda.html">Ir a tienda</a>
-                </div>
-            </div>
-            <div class="caracteristicas">
-                <div class="caracteristica-1">
-                    <div class="contenedor-caracteristica-1">
-                        <div class="img-caracteristica-1">
-                            <img src="img/caracteristica-1.png" alt="">
-                        </div>
-                        <div class="descripcion-caracteristica-1">
-                            <p>
-                                <span>Responsabilidad</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="caracteristica-2">
-                    <div class="contenedor-caracteristica-2">
-                        <div class="img-caracteristica-2">
-                            <img src="img/caracteristica-2.png" alt="">
-                        </div>
-                        <div class="descripcion-caracteristica-2">
-                            <p>
-                                <span>Rapidez</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="caracteristica-3">
-                    <div class="contenedor-caracteristica-3">
-                        <div class="img-caracteristica-3">
-                            <img src="img/caracteristica-3.png" alt="">
-                        </div>
-                        <div class="descripcion-caracteristica-3">
-                            <p>
-                                <span>Puntualidad</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-siguenos">
-                <div class="siguenos-img">
-                    <img src="img/siguenos.png" alt="">
-                </div>
-                <div>
-                    <!--Aqui nos quedamos en html-->
-                </div>
-            </div>
+        </div>
     </main>
+    <!-- inicio-footer -->
+    <footer>
+        <section class="column column-1">
+            <h3>Nosotros</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, amet laborum. Enim dolorum nam aliquam molestias, cumque numquam consequuntur eligendi, deleniti vel nesciunt nihil quae voluptas, eius quidem deserunt sapiente?</p>
+        </section>
+        <section class="column">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Ocaciones</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="tienda.html">Contáctanos</a></li>
+                <li><a href="">Carrito</a></li>
+            </ul>
+        </section>
+        <section class="column">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="">Se parte de nosotros</a></li>
+                    <li><a href="">Iniciar sesión</a></li>
+            </ul>
+        </section>
+        <section class="column">
+            <h3>Redes sociales</h3>
+            <ul>
+                <li>
+                    <span>Facebook</span>
+                    <a href="#" class="btn-social" id="btn-facebook"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <span>Instagram</span>
+                    <a href="#" class="btn-social" id="btn-instagram"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <span>Pinterest</span>
+                    <a href="#" class="btn-social" id="btn-pinterest"><i class="fab fa-pinterest"></i></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 </body>
-
 </html>

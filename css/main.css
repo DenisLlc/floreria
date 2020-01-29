@@ -1,0 +1,103 @@
+/* colores fijados como varibles para estetica de la pagina */
+:root {
+    --color-1: #FBEFC4;
+    --color-2: #52696F;
+    --color-3: #E5717F;
+    --color-4: #9E3150;
+    --color-5: #88BAA4;
+    --color-6: #FFF;
+    --color-7: #000;
+}
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+main .img-principal {
+    width: 80%;
+    height: 550px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 17px;
+}
+main .img-principal img {
+    height: 100%;
+}
+main .productos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom:17px;
+}
+main .productos h2 a {
+    text-decoration: none;
+    font-size: 32px;
+    color: var(--color-7);
+}
+main .productos .mas-vendidos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+main .productos .product img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+main .productos .product img:hover {
+    width: 255px;
+    height: 255px;
+}
+/* product */
+main .productos .mas-vendidos .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #f1f3f5;
+}
+main .productos .mas-vendidos .product .nombre {
+    text-decoration: none;
+    color: var(--color-4);
+    font-size: 24px;
+}
+
+main .productos .mas-vendidos .product .price {
+    text-decoration: none;
+    color: var(--color-7);
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+main .productos .mas-vendidos .product .btn {
+    text-decoration: none;
+    padding: 0 20px; /*arribaAbajo - dereachaIzquierda*/
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #ffffff;
+    background: var(--color-3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+main .productos .mas-vendidos .product .btn:hover {
+    background-color: var(--color-4);
+}
+main .productos .mas-vendidos .product i {
+    margin-right: 7px;
+}

@@ -1,0 +1,56 @@
+/* colores fijados como varibles para estetica de la pagina */
+:root {
+    --color-1: #FBEFC4;
+    --color-2: #52696F;
+    --color-3: #E5717F;
+    --color-4: #9E3150;
+    --color-5: #88BAA4;
+}
+footer {
+    background-color: var(--color-3);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+footer section {
+    width: 180px;
+}
+footer .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+footer .column h3 {
+    color: #FFF;
+    font-size: 27px;
+
+}
+footer .column-1 p {
+    color: #FFF;
+    font-size: 16px;
+}
+footer .column ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+footer .column ul li {
+    margin-bottom: 7px;
+}
+footer .column ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+footer .column ul span {
+    text-decoration: none;
+    color: #FFF;
+}

@@ -1,0 +1,20 @@
+/* colores fijados como varibles para estetica de la pagina */
+:root {
+    --color-1: #FBEFC4;
+    --color-2: #52696F;
+    --color-3: #E5717F;
+    --color-4: #9E3150;
+    --color-5: #88BAA4;
+    --color-6: #FFF;
+    --color-7: #000;
+}
+/* inicio-body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* fin-body */
