@@ -6,10 +6,13 @@
     --color-4: #9E3150;
     --color-5: #88BAA4;
 }
+/* inicio-footer */
+
 footer {
     background-color: var(--color-3);
     width: 100%;
     display: flex;
+    justify-content: space-around;
     align-items: flex-start;
 }
 footer section {
@@ -54,3 +57,4 @@ footer .column ul span {
     text-decoration: none;
     color: #FFF;
 }
+/* fin-footer */
