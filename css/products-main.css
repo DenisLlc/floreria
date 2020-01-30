@@ -1,0 +1,106 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+main .transiciones {
+    display: flex;
+    width: 80%;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+main .transiciones img {
+    height: 100%;
+}
+/* inicio-filter */
+main .filter {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+}
+main .filter span {
+    padding: 5px 15px;
+    color: #FFF;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .filter span i {
+    padding: 0 5px 0 5px;
+}
+main .filter span:hover {
+    cursor: pointer;
+    color: #000;
+}
+main .filter .ds-none {
+    display: none;
+}
+/* fin.filter */
+/* inicio-container-product */
+main .container-products {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    padding: 10px 0;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px 10px;
+}
+main .container-products .product img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+main .container-products .product img:hover {
+    width: 255px;
+    height: 255px;
+}
+main .container-products .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #f1f3f5;
+}
+main .container-products .product .nombre {
+    text-decoration: none;
+    color: var(--color-4);
+    font-size: 24px;
+}
+
+main .container-products .price {
+    text-decoration: none;
+    color: var(--color-7);
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+main .container-products .btn {
+    text-decoration: none;
+    padding: 0 20px; /*arribaAbajo - dereachaIzquierda*/
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #ffffff;
+    background: var(--color-3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+main .container-products .product .btn:hover {
+    background-color: var(--color-4);
+}
+main .container-products .product i {
+    margin-right: 7px;
+}
