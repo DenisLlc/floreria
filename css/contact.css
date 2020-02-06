@@ -1,0 +1,39 @@
+main {
+    width: 100%;
+    display: grid;
+}
+main .contenedor {
+    border: 1px solid black;
+    border-radius: 3px;
+    justify-self: center;
+    padding: 0.5em;
+    width: 80%;
+
+}
+main .contenedor form {
+    display: grid;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+main .contenedor h3{
+    text-align: center;
+}
+main .contenedor form .contenedor-inputs {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 36px 36px 36px 36px auto 36px 36px;
+    grid-gap: 0.5em;
+}
+main .contenedor form .contenedor-inputs input {
+    text-align: center;
+
+}
+
+@media (max-width: 320px){
+    main .contenedor form .contenedor-inputs {
+        grid-template-columns: 3fr;
+    }
+}
