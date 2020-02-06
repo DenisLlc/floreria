@@ -23,38 +23,34 @@
             <img src="img/landing.jpg" alt="">
         </div>
         <div class="filter">
-            <span>
+            <button onclick="myFunction()" class="dropbtn">
                 Todos los productos
                 <i class="fas fa-angle-down"></i>
-            </span>
-            <div class="ds-none">
+            </button>
+            <div class="dropdown-content" id="myDropdown">
                 <a href="">Lo más reciente</a>
                 <a href="">Ascendente</a>
                 <a href="">Lo más popular</a>
                 <a href="">Todos los productos</a>
             </div>
-            <span>
+            <button onclick="myFunction2()" class="dropbtn">
                 Especie
                 <i class="fas fa-angle-down"></i>
-            </span>
-            <div class="ds-none">
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
                 <a href="">Rosa</a>
                 <a href="">Girasol</a>
                 <a href="">Clavel</a>
             </div>
-            <span>
+            <button onclick="myFunction3()" class="dropbtn">
                 Tamaño
                 <i class="fas fa-angle-down"></i>
-            </span>
-            <div class="ds-none">
+            </button>
+            <div class="dropdown-content" id="myDropdown3">
                 <a href="">Pequeño</a>
                 <a href="">Mediano</a>
                 <a href="">Grande</a>
             </div>
-            <span>
-                Color
-                <i class="fas fa-angle-down"></i>
-            </span>
         </div>
         <h2>Todos los productos</h2>
         <div class="container-products">
@@ -113,5 +109,37 @@
     <!-- inicio-footer -->
     <script src="src/templates/footer.js"></script>
     <!-- fin-footer -->
+    <!-- scripts -->
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        function myFunction2() {
+          document.getElementById("myDropdown2").classList.toggle("show");
+        }
+        function myFunction3() {
+          document.getElementById("myDropdown3").classList.toggle("show");
+        }
+        function myFunction4() {
+          document.getElementById("myDropdown4").classList.toggle("show");
+        }
+        </script>
 </body>
 </html>

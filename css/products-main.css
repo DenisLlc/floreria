@@ -17,31 +17,61 @@ main .transiciones img {
 }
 /* inicio-filter */
 main .filter {
-    width: 100%;
+    width: 80%;
     margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 10px 0;
+    justify-self: center;
+    align-self: center;
     background-color: darkgrey;
 }
-main .filter span {
-    padding: 5px 15px;
-    color: #FFF;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-main .filter span i {
-    padding: 0 5px 0 5px;
-}
-main .filter span:hover {
+/* dropdown */
+/* Dropdown Button */
+.dropbtn {
+    background-color: darkgrey;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
     cursor: pointer;
-    color: #000;
-}
-main .filter .ds-none {
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #000;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
     display: none;
-}
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+/* fin-drop-down */
 /* fin.filter */
 /* inicio-container-product */
 main .container-products {
